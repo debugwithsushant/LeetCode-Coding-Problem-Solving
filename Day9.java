@@ -8,7 +8,7 @@ public class Day9 {
         for (int i = 1; i < nums.length; i++) {
             currentSum = Math.max(nums[i], currentSum + nums[i]);
 
-            if (maxSum < currentSum) {
+            if (currentSum > maxSum) {
                 maxSum = currentSum;
             }
         }
